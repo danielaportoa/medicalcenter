@@ -19,6 +19,7 @@ class PatientsController < ApplicationController
   def edit
   end
 
+
   # POST /patients or /patients.json
   def create
     @patient = Patient.new(patient_params)
@@ -67,4 +68,4 @@ class PatientsController < ApplicationController
     def patient_params
       params.require(:patient).permit(:name, :age)
     end
-end
+  end

@@ -1,6 +1,19 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @patient %>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Treatment</th>
+      <th scope="col" colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <%= render @patient %>
+  </tbody>
+</table>
 
 <div>
   <%= link_to "Edit this patient", edit_patient_path(@patient) %> |
